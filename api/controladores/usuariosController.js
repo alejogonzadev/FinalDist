@@ -97,14 +97,14 @@ usuariosController.Registro = function(request, response){
                                                 <td style="padding: 20px; text-align: center;">
                                                     <p style="font-size: 16px; color: #333333;">Hola,</p>
                                                     <p style="font-size: 16px; color: #333333;">Gracias por registrarte. Haz clic en el siguiente botón para activar tu cuenta en Nazario:</p>
-                                                    <a href="http://localhost:4200/activar/${post.email}/${azar}" style="display: inline-block; background-color: #723f14; color: white; padding: 10px 20px; text-decoration: none; font-size: 16px; border-radius: 5px; margin: 20px 0;">Activar Cuenta</a>
+                                                    <a href="${config.urlreal}/activar/${post.email}/${azar}" style="display: inline-block; background-color: #723f14; color: white; padding: 10px 20px; text-decoration: none; font-size: 16px; border-radius: 5px; margin: 20px 0;">Activar Cuenta</a>
                                                     
                                                     <p style="font-size: 16px; color: #333333;">O utiliza el siguiente código de activación:</p>
                                                     <p style="font-size: 18px; font-weight: bold; color: #723f14; background-color: #f9f9f9; padding: 10px; border-radius: 5px; display: inline-block;">${azar}</p>
                                                     
                                                     <p style="font-size: 14px; color: #333333; margin-top: 20px;">Si prefieres, también puedes copiar y pegar el siguiente enlace en tu navegador:</p>
                                                     <p style="font-size: 14px; color: #723f14; background-color: #f9f9f9; padding: 10px; border-radius: 5px; word-break: break-all;">
-                                                        http://localhost:4200/activar/${post.email}/${azar}
+                                                        ${config.urlreal}/activar/${post.email}/${azar}
                                                     </p>
                                                     
                                                     <p style="font-size: 14px; color: #666666;">Si no has solicitado esta cuenta, ignora este correo.</p>
